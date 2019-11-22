@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body, p, ul, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "roboto-mono";
+  color: #222222;
+}
+
+ul, li {
+list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
