@@ -1,0 +1,39 @@
+/* superinfo */
+.superinfo-bg {
+  background: #000000;
+  color: white;
+}
+.superinfo {
+  display: flex;
+  max-width: 960px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+.superinfo a, .superinfo p{
+  margin: 0 10px 10px 10px;
+}
+.superinfo a {
+color: #f7f7f7;
+}
+
+/*Footer*/
+
+.footer {
+	display: flex;
+	background: #2c70ff;
+	height: 40px;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+	left: 0;
+}
+
+.footer p {
+	flex: 1;
+	text-align: center;
+	font-size: 1.25em;
+	color: #f7f7f7;
+}
