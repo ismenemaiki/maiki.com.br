@@ -2,7 +2,15 @@
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-/* C:\Workspace\maiki.com.br\maiki\node_modules\bootstrap\dist\css\bootstrap.min.css */
+.conteudo {
+  margin: 0 10px 10px 10px;
+  display: flex;
+  max-width: 960px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
 body, p, ul, li, a {
   margin: 0px;
   padding: 0px;
