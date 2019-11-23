@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { PortfoliosComponent } from './portfolios/portfolios.component';
 import { routing } from './app.routing';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { routing } from './app.routing';
   ],
   imports: [
     BrowserModule,
+    BsDropdownModule.forRoot(),
     routing
   ],
   providers: [],
