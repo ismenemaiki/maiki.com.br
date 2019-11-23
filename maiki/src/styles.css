@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* C:\Workspace\maiki.com.br\maiki\node_modules\bootstrap\dist\css\bootstrap.min.css */
 body, p, ul, li, a {
   margin: 0px;
   padding: 0px;
