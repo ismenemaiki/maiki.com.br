@@ -11,11 +11,8 @@
   margin: 0 auto;
   padding-top: 4px;
 }
-.superinfo a, .superinfo p{
-  margin: 0 10px 10px 10px;
-}
 .superinfo a {
-color: #f7f7f7;
+  color: #f7f7f7;
 }
 
 /*Footer*/
