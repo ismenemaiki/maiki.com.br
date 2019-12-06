@@ -1,15 +1,18 @@
-.circulo {
+/* .circulo {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	overflow: hidden;
 	float: center;
 	margin: 35px;
-	/* transition: 0.1s; */
+	transition: 0.1s;
 }
 
 .circulo:hover{
 	transform: rotateY(180deg);
+} */
+.foto {
+  border-radius: 50%;
 }
 /*Introdução*/
 
