@@ -8,6 +8,8 @@ import { SobreComponent } from './sobre/sobre.component';
 import { PortfoliosComponent } from './portfolios/portfolios.component';
 import { routing } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CurriculoComponent } from './curriculo/curriculo.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     MenuComponent,
     HomeComponent,
     SobreComponent,
-    PortfoliosComponent
+    PortfoliosComponent,
+    CurriculoComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
