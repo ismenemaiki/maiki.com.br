@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  menuResponsivo() {
+    const menuNav = document.getElementById('menu-nav');
+    if (menuNav.className === 'menu-nav') {
+      menuNav.className += ' responsive';
+    } else {
+      menuNav.className = 'menu-nav';
+    }
   }
 
+  teste() {
+    const sobre = document.getElementById('.sobre');
+    console.log(sobre);
+
+  }
 }

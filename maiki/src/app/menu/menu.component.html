@@ -1,26 +1,13 @@
-<header class="menu-bg">
-  <div class="menu">
-    <nav class="menu-nav">
-      <ul>
-        <li><a routerLink="/">inicio</a></li>
-        <li><a routerLink="/sobre">Sobre</a></li>
-        <li><a routerLink="/portfolios">Portfólios</a></li>
-        <li><a routerLink="/curriculo">Currículo</a></li>
-        <li><a routerLink="/blog">Blog</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<!--
-  MATERIALIZE CSS
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo right">Logo</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav> -->
+<nav class="menu-nav" id="menu-nav">
+  <ul>
+    <li><a routerLink="/" class="active">inicio</a></li>
+    <li><a routerLink="/sobre" id="sobre">Sobre</a></li>
+    <li><a routerLink="/portfolios">Portfólios</a></li>
+    <li><a routerLink="/curriculo">Currículo</a></li>
+    <li><a routerLink="/blog">Blog</a></li>
+    <li><a href="javascript:void(0);" class="icon" (click)="menuResponsivo()">
+      <i class="fa fa-bars"></i>
+    </a></li>
+  </ul>
+</nav>
