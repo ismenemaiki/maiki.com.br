@@ -9,10 +9,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 4px;
+  padding-top: auto 2px;
+  padding-bottom: 3px;
 }
 .superinfo a {
   color: #f7f7f7;
+  font-size: 0.8em
+}
+
+.superinfo p {
+   font-size: 0.8em;
 }
 
 /*Footer*/
