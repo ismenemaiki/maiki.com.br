@@ -27,7 +27,7 @@
 }
 
 .menu-nav a.active {
-  background-color: tomato;
+  /* background-color: tomato; */
   color: white;
 }
 
