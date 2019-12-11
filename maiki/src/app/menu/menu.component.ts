@@ -18,10 +18,4 @@ export class MenuComponent implements OnInit {
       menuNav.className = 'menu-nav';
     }
   }
-
-  teste() {
-    const sobre = document.getElementById('.sobre');
-    console.log(sobre);
-
-  }
 }

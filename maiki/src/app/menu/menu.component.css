@@ -1,3 +1,11 @@
+
+
+.menu-nav ul {
+  max-width: 960px;
+  justify-content: left;
+  margin: 0 auto;
+}
+
 .menu-nav {
   overflow: hidden;
   background-color: #333;
@@ -19,7 +27,7 @@
 }
 
 .menu-nav a.active {
-  background-color: #4CAF50;
+  background-color: tomato;
   color: white;
 }
 
