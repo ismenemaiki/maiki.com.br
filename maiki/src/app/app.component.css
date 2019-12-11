@@ -40,3 +40,10 @@
 	font-size: 1.25em;
 	color: #f7f7f7;
 }
+
+@media screen and (max-width: 960px) {
+  .superinfo {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
