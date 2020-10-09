@@ -9,14 +9,16 @@ export class PortfoliosComponent implements OnInit, AfterViewInit {
   tattoos: any;
   desenhos: any;
   slideIndex = 1;
-  array: any;
-  root = '../../assets/img/';
+  arrayTattoos: any;
+  arrayDesenhos: any;
+  rootTattos = '../../assets/img/tattoos/';
+  // rootDesenhos = '../../assets/img/desenhos/';
   imagemSelecionada: string;
 
   constructor() {}
 
   ngOnInit() {
-    this.array = [
+    this.arrayTattoos = [
       { id: 1, nome: 'livrai-me-do-mal' },
       { id: 2, nome: 'gengar' },
       { id: 3, nome: 'triangulo-bolinha' },
@@ -30,8 +32,9 @@ export class PortfoliosComponent implements OnInit, AfterViewInit {
       { id: 11, nome: 'la-casa-de-papel' },
       { id: 12, nome: 'palhaço' },
       { id: 13, nome: 'passarinho-rosa' },
-
-
+    ];
+    this.arrayDesenhos = [
+      { id: 1, nome: 'img' }
     ];
     const abaTattoo = document.getElementById('btn-tattoo');
     abaTattoo.click();

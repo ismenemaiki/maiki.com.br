@@ -68,3 +68,13 @@
 ::ng-deep #abrir-modal > div {
   width: 800px;
 }
+::ng-deep #tatuagens > div.container-visualizador.w3-content.w3-display-container > div.btn > button.w3-button.w3-black.w3-display-left {
+  border-radius: 50%;
+}
+::ng-deep #tatuagens > div.container-visualizador.w3-content.w3-display-container > div.btn > button.w3-button.w3-black.w3-display-right {
+  border-radius: 50%;
+}
+::ng-deep #abrir-modal {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
