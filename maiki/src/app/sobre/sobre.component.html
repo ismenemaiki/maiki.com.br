@@ -1,5 +1,36 @@
+
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text asd</span>
+      </div>
 <div class="conteudo">
-  <p>
-    Aqui contarei um pouco sobre mim e deixarei todos meus contatos e redes sociais...
-  </p>
+  <div>
+    <div class="inline">
+      <section class="imagem">
+        <img class="foto" src="../../assets/img/eu-sobre.jpg" alt="Maiki">
+      </section>
+      <section class="informacoes">
+        <p>
+          Eu me chamo Maiki, tenho 27 anos, sou programador de profissão, analista de formação, engenheiro de coração e tatuador entusiasta (iniciante).
+          Sou extramamente apaixonado por desenvolver, entender soluções, saber como as coisas funcionam (não só na programação e/ou teorias), montar coisas misturando tudo.
+          Sou muito curioso e gosto muito de aprender a fazer de tudo, sou 'mexanico' e gosto de colocar a mão na massa.
+        </p>
+        <p>
+          Faço de tudo um pouco, tirando politica, gastronomia, medicina e finanças, de resto me arisco de tudo! (rs)
+          Tenho inumeros projetos na cabeça, falta apenas organização para pôr em pratica.
+        </p>
+        <p>
+          Meu intuito com o site é fazer um portfolio das minhas artes que desenvolvo durante o tempo vago (tatuagens e desenhos basicamente), talvez diversificar com algumas coisas atipicas também.
+        </p>
+      </section>
+    </div>
+    <p class="center">Redes Sociais e contatos:</p>
+    <section class="redes-sociais">
+      <span *ngFor="let item of arrayRedes" >
+        <a href="{{item.link}}" target="_blank">
+          <img class="img" [src]="rootImagens + item.nome + '.png'" alt="{{item.nome}}">
+        </a>
+      </span>
+
+    </section>
+  </div>
 </div>
