@@ -7,9 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { PortfoliosComponent } from './portfolios/portfolios.component';
 import { routing } from './app.routing';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { BlogComponent } from './blog/blog.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +19,11 @@ import { BlogComponent } from './blog/blog.component';
     SobreComponent,
     PortfoliosComponent,
     CurriculoComponent,
-    BlogComponent
+    BlogComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
-    BsDropdownModule.forRoot(),
     routing
   ],
   providers: [],
