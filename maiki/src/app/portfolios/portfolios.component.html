@@ -1,5 +1,43 @@
+
 <div class="conteudo">
-  <p>
-    Aqui postarei meus portfólios dos meus desenhos, das tatuagens e certificados de cursos.
-  </p>
+  <div class="tab">
+    <button id="btn-tattoo" class="linkAba" (click)="trocaAba($event, 'tatuagens')">Tatuagens</button>
+    <button id="btn-desenho" class="linkAba" (click)="trocaAba($event, 'desenhos')">Desenhos</button>
+  </div>
+
+  <div id="tatuagens" class="conteudoAba">
+    <div class="container-visualizador w3-content w3-display-container" >
+      <div>
+        <span *ngFor="let item of array ">
+          <img (click)="abrirModal('abrir-modal', item.nome)" class="slides" [src]="root + item.nome + '.jpg'">
+        </span>
+      </div>
+      <div class="btn">
+        <button class="w3-button w3-black w3-display-left" (click)="trocaImagem(-1)">❮</button>
+        <button class="w3-button w3-black w3-display-right" (click)="trocaImagem(1)">❯</button>
+      </div>
+    </div>
+      <div class="inline galeria" *ngIf="array" >
+        <span *ngFor="let item of array">
+          <div class="selecionado" (click)="imagemAtual(item.id)">
+            <img id="item.id" class="miniatura" [src]="root + item.nome + '.jpg'">
+          </div>
+        </span>
+      </div>
+      <div class="w3-container">
+        <div id="abrir-modal" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container" >
+              <span (click)="fecharModal('abrir-modal')" class="w3-button w3-display-topright black-write">&times;</span>
+              <img *ngIf="imagemSelecionada" class="" [src]="root + imagemSelecionada + '.jpg'" >
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div id="desenhos" class="conteudoAba">
+    <p>Conteudo desenho</p>
+  </div>
 </div>
+
