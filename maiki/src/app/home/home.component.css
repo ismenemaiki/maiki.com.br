@@ -1,55 +1,147 @@
-/* .circulo {
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	overflow: hidden;
-	float: center;
-	margin: 35px;
-	transition: 0.1s;
-}
-
-.circulo:hover{
-	transform: rotateY(180deg);
-} */
 img {
-  border-radius: 50%;
-  display: block;
-  max-width: 100%;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 450px;
 }
-/*Introdução*/
 
-.introducao {
-	max-width: 560px;
-	text-align: center;
-	font-style: italic;
-	font-size: 2em;
-	margin: 0 auto;
-	padding: 10px 10px; /*PRIMEIRO: ALTURA > SEGUNDO: LARGURA */
-
+.animacao_pc {
+  padding: 60px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
 }
-/* padding é interno e margin é externo */
-
+.texto {
+  display: flex;
+  width: 360px;
+  color: #777777 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.625em;
+  text-align: right;
+  align-items: center;
+}
 .nome {
-	/* font-family: "roboto-mono"; */
-	display: flex;
-	font-size: 3em;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	color: #000000;
+  margin: 20px 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  line-height: 1.2em !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
 }
 .apresentacao {
-	max-width: 960px;
-	margin: 20px auto;
+  max-width: 100%;
+	height: 630px;
+	margin: 0px auto 40px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+  background: #f9f9ff;
 }
-
 .apresentacao::after, .apresentacao::before {
 	content: '';
 	display: table;
 	clear: both;
+}
+@keyframes pisca{
+  0%, 100%{ opacity: 1; }
+  50%{ opacity: 0; }
+}
+.console-pc{
+  font-size: 14px;
+  padding-top: 20px;
+  max-width: 220px;
+  text-align: left;
+  margin: 20px auto;
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(11, 168, 58);
+}
+.console-pc:after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+.container{
+  padding-bottom: 15px;
+}
+
+.back {
+  background-image: url('../../assets/img/programador.png');
+  background-size: 100% 100%;
+  height: 400px;
+  width: 650px;
+}
+::selection {
+  background-color: #8490ff;
+  color: #fff;
+}
+.size {
+  font-size: 0.8em;
+}
+.primary-btn {
+  text-decoration: none;
+  background: #546ef9;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+}
+.primary-btn:hover {
+  box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 376px) {
+  .apresentacao {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    padding: 10px;
+    justify-content: flex-start;
+    margin: 40px 0;
+  }
+  .nome {
+    font-size: 30px;
+  }
+
+  .animacao_pc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .texto {
+    width: 100%;
+  }
+  .foto {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    margin: 40px 50px;
+  }
+  .back {
+    background-image: url('../../assets/img/mobile_programador.png');
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+  }
+  .console-pc{
+    font-size: 10px;
+    padding-top: 20px;
+    max-width: 150px;
+    text-align: left;
+    color: rgb(7, 201, 65);
+    margin-left: 95px !important;
+  }
 }

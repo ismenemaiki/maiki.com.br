@@ -1,15 +1,58 @@
 
-footer {
-  padding-top: 10px;
-  text-align: center;
-  color: #ffff;
-  background-color: #333;
-  bottom: 0;
-  left: 0;
+.rede-circulo {
+  width: 40px;
   height: 40px;
-  /* position: fixed; */
-  width: 100%;
+  cursor: pointer;
 }
-.fixo {
-  position: fixed;
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+.redes {
+  justify-content: space-around;
+  padding: 20px;
+  width: 60%;
+}
+.container-redes {
+  display: flex;
+  justify-content: space-around;
+}
+.container-contatos {
+  display: flex;
+  justify-content: space-around;
+}
+.contatos {
+  justify-content: space-around;
+  padding: 20px;
+  width: 25%;
+}
+
+p {
+  color: #fff;
+  justify-self: center;
+  text-align: center;
+  padding: 20px;
+}
+.w100 {
+  width: 100%;
+  background-color: #333;
+}
+
+footer {
+  border-top: solid 1px #fff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+img {
+  transition: all 0.5s;
+  filter: opacity(40%)
+}
+img:hover{
+  filter: none;
+}
+
+.m50 {
+  margin-top: 50px;
 }

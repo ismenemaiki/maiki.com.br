@@ -1,66 +1,50 @@
-.foto {
-  max-width: 400px;
-  max-height: 400px;
+
+.reverse {
+
+  flex-direction: row-reverse;
 }
 .inline {
-  flex-direction: row-reverse;
-  display: flex;
-  padding-top: 7px;
-}
-.informacoes {
-  max-width: 680px;
-}
-.redes-sociais {
-  display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.img {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-.center {
-  padding-top: 30px;
-  text-align: center;
+  display: flex;
+  padding-top: 20px;
+  background: #f9f9ff;
 }
 p {
-  padding-bottom: 12px;
+  text-align: justify;
+  max-width: 680px;
+  margin: 5px;
+  color: #777777 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.8em !important;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+.p100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.tooltip .tooltiptext {
+@media screen and (max-width: 470px) {
+  .foto {
+    width: 125px;
+    margin-right: 5px;
+  }
+  .informacoes  {
+    font-size: 11px;
+    margin: 5px;
+  }
+  .center {
+    font-size: 11px;
+  }
+  .redes-sociais .rede-circulo {
+    width: 30px;
+    height: 30px;
+  }
+}
+img {
+  width: 400px;
+  height: 500px;
+}
+.hide {
   visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
