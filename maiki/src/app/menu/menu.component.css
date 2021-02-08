@@ -1,14 +1,17 @@
 
 
 .menu-nav ul {
+  display: flex;
+  height: 60px;
   max-width: 960px;
   justify-content: left;
   margin: 0 auto;
+  align-items: center;
 }
 
 .menu-nav {
   overflow: hidden;
-  background-color: #333;
+  background: -webkit-linear-gradient(-45deg, #00eaf3 0%, #546ef9 50%, #8c1cf9 100%);
 }
 
 .menu-nav a {
@@ -19,18 +22,15 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  align-items: center;
 }
 
-.menu-nav a:hover {
-  background-color: #ddd;
-  color: black;
+@media screen and (min-width: 470px) {
+  .menu-nav a:hover {
+    /* background-color: #ddd; */
+    color: #8c1cf9
+  }
 }
-
-.menu-nav a.active {
-  /* background-color: tomato; */
-  color: white;
-}
-
 .menu-nav .icon {
   display: none;
 }
@@ -55,4 +55,8 @@
     display: block;
     text-align: left;
   }
+}
+
+::ng-deep #inicio {
+  padding-left: 0px;
 }

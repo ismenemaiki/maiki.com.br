@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   constructor() {}
-
-  ngOnInit() {}
+  listaMenu = ['inicio', 'sobre', 'portfolios', 'curriculo', 'blog'];
+  ngOnInit() {
+    // const inicio = document.getElementById('inicio');
+    // inicio.className += ' active';
+  }
 
   menuResponsivo() {
     const menuNav = document.getElementById('menu-nav');
@@ -17,5 +20,16 @@ export class MenuComponent implements OnInit {
     } else {
       menuNav.className = 'menu-nav';
     }
+  }
+  ativar(menu: string) {
+    this.menuResponsivo();
+    this.listaMenu.forEach((it: string) => {
+      const item = document.querySelector(`#${it}`);
+      if (item.className.includes('active')) {
+        item.className = '';
+      }
+    });
+    const menuClicado = document.querySelector(`#${menu}`);
+    menuClicado.className += ' active';
   }
 }
