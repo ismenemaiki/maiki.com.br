@@ -1,0 +1,34 @@
+/* superinfo */
+.superinfo-bg {
+  background: #000000;
+  color: white;
+}
+.superinfo {
+  display: flex;
+  max-width: 960px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: auto 2px;
+  padding-bottom: 3px;
+}
+.superinfo a {
+  color: #f7f7f7;
+  font-size: 0.8em
+}
+
+.superinfo p {
+   font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 960px) {
+  .superinfo {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.conteudo-principal {
+  position: relative;
+}
+

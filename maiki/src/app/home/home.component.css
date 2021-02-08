@@ -1,0 +1,55 @@
+/* .circulo {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: center;
+	margin: 35px;
+	transition: 0.1s;
+}
+
+.circulo:hover{
+	transform: rotateY(180deg);
+} */
+img {
+  border-radius: 50%;
+  display: block;
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+}
+/*Introdução*/
+
+.introducao {
+	max-width: 560px;
+	text-align: center;
+	font-style: italic;
+	font-size: 2em;
+	margin: 0 auto;
+	padding: 10px 10px; /*PRIMEIRO: ALTURA > SEGUNDO: LARGURA */
+
+}
+/* padding é interno e margin é externo */
+
+.nome {
+	/* font-family: "roboto-mono"; */
+	display: flex;
+	font-size: 3em;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
+}
+.apresentacao {
+	max-width: 960px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.apresentacao::after, .apresentacao::before {
+	content: '';
+	display: table;
+	clear: both;
+}

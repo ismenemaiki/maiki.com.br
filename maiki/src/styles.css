@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.conteudo {
+  margin: 0 10px 10px 10px;
+  /* display: flex; */
+  max-width: 960px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+body, p, ul, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* font-family: "roboto-mono"; */
+  color: #222222;
+}
+
+p {
+  font-size: 1.25em;
+}
+ul, li {
+list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
