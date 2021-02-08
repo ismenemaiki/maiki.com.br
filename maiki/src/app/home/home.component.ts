@@ -1,3 +1,4 @@
+import { BrowserDetectService } from './../core/services/browser-detect.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  isMobile: boolean;
+
+  constructor(private browserDetect: BrowserDetectService) {}
 
   ngOnInit() {
+    this.isMobile = this.browserDetect.isMobile();
     const titulo = document.querySelector('.console-pc');
     this.typeWrite(titulo);
   }
