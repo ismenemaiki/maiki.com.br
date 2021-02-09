@@ -21,13 +21,6 @@
    font-size: 0.8em;
 }
 
-
-@media screen and (max-width: 960px) {
-  .superinfo {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}
 .conteudo-principal {
   position: relative;
 }

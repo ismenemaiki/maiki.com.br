@@ -25,14 +25,18 @@
   align-items: center;
 }
 
-@media screen and (min-width: 470px) {
-  .menu-nav a:hover {
-    /* background-color: #ddd; */
-    color: #8c1cf9
-  }
+::ng-deep #inicio {
+  padding-left: 0px;
 }
+
 .menu-nav .icon {
   display: none;
+}
+
+/* @media screen and (min-width: 470px) {
+  .menu-nav a:hover {
+    color: #8c1cf9
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -55,8 +59,5 @@
     display: block;
     text-align: left;
   }
-}
+} */
 
-::ng-deep #inicio {
-  padding-left: 0px;
-}
