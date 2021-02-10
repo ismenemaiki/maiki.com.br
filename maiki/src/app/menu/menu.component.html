@@ -1,19 +1,22 @@
+<div *ngIf="isDesktop">
+  <nav class="menu-nav" id="menu-nav">
+    <ul>
+      <li><a routerLink="/" id="inicio">Inicio</a></li>
+      <li><a routerLink="/sobre" id="sobre">Sobre</a></li>
+      <li><a routerLink="/portfolios" id="portfolios">Portfólios</a></li>
+      <li><a routerLink="/curriculo" id="curriculo">Currículo</a></li>
+    </ul>
+  </nav>
+</div>
+<div *ngIf="isMobile">
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn"  (click)="closeMenu()">×</a>
+    <a routerLink="/" id="inicio" (click)="closeMenu()">Inicio</a>
+    <a routerLink="/sobre" id="sobre" (click)="closeMenu()">Sobre</a>
+    <a routerLink="/portfolios" id="portfolios" (click)="closeMenu()">Portfólios</a>
+    <a routerLink="/curriculo" id="curriculo" (click)="closeMenu()">Currículo</a>
+  </div>
 
-<nav class="menu-nav" id="menu-nav">
-  <ul>
-    <li><a routerLink="/" id="inicio" (click)="ativar('inicio')" >Inicio</a></li>
-    <li><a routerLink="/sobre" id="sobre" (click)="ativar('sobre')">Sobre</a></li>
-    <li><a routerLink="/portfolios" id="portfolios" (click)="ativar('portfolios')">Portfólios</a></li>
-    <li><a routerLink="/curriculo" id="curriculo" (click)="ativar('curriculo')">Currículo</a></li>
-    <!-- <li><a routerLink="/blog" id="blog" (click)="ativar('blog')">Blog</a></li> -->
-    <li><a href="javascript:void(0);" class="icon" (click)="menuResponsivo()">
-      <i class="fa fa-bars"></i>
-    </a></li>
-  </ul>
-</nav>
+  <div class="openbtn menu-nav" (click)="openMenu()">☰</div>
 
-<!-- (click)="menuResponsivo('Inicio')"
-(click)="menuResponsivo('Sobre')"
-(click)="menuResponsivo('Portfólios')"
-(click)="menuResponsivo('Currículo')"
-(click)="menuResponsivo('Blog')" -->
+</div>
