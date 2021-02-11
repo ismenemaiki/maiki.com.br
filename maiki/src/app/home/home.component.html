@@ -23,7 +23,7 @@
         <div class="texto mobile">
           <div>
             <span>
-              Entusiasta no mundo da arte na pele, amante das artes visuais e
+              Entusiasta no mundo da arte na pele, amante das artes visuais, escritor de código e
               apreciador de um bom cafézinho
               <br />
               <br />
@@ -36,5 +36,24 @@
   </div>
 </ng-container>
 <ng-container *ngIf="isMobile" >
-  é mobile
+  <section class="box">
+    <div class="descritivo">
+      <h6 class="">Ao seu dispor,</h6>
+      <h1 class="">Maiki R. Ismene</h1>
+      <br />
+      <div>
+        <span class="resumo">
+          Entusiasta no mundo da arte na pele, amante das artes visuais, escritor de código e
+          apreciador de um bom cafézinho
+        </span>
+      </div>
+      <div class="m30">
+        <a routerLink="/portfolios" class="primary-btn text-uppercase">portfólio</a>
+      </div>
+
+    </div>
+    <div class="fundo-branco">
+      <img class="foto-mobile" src="../../assets/img/maiki-inicio2.png" alt="Maiki" />
+    </div>
+  </section>
 </ng-container>

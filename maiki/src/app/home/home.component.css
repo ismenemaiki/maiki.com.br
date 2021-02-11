@@ -103,45 +103,43 @@ img {
   box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* @media screen and (max-width: 376px) {
-  .apresentacao {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 70%;
-    padding: 10px;
-    justify-content: flex-start;
-    margin: 40px 0;
-  }
-  .nome {
-    font-size: 30px;
-  }
-
-  .animacao_pc {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .texto {
-    width: 100%;
-  }
-  .foto {
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 70%;
-    margin: 40px 50px;
-  }
-  .back {
-    background-image: url('../../assets/img/mobile_programador.png');
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-  }
-  .console-pc{
-    font-size: 10px;
-    padding-top: 20px;
-    max-width: 150px;
-    text-align: left;
-    color: rgb(7, 201, 65);
-    margin-left: 95px !important;
-  }
-} */
+.box {
+  display: flex;
+  flex-direction: column;
+}
+h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 15px;
+}
+h1 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: #222;
+  line-height: 1.2em!important;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+.descritivo {
+  padding: 20px 15px;
+  color: #777;
+  font-weight: 300;
+  line-height: 1.625em;
+}
+.m30 {
+  margin-top:30px !important;
+}
+.fundo-branco {
+  box-shadow: 0px 5px 23px 0px rgb(0 0 0 / 20%);
+  background: #f9f9ff;
+  text-align: -webkit-center;
+}
+.foto-mobile {
+  width: 70%;
+  height: 70%;
+}
