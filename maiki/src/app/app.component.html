@@ -8,8 +8,11 @@
 </div>
 
 <div *ngIf="isMobile" >
-  <app-menu></app-menu>
+  <app-menu class="mobile"></app-menu>
   <div class="conteudo-principal" >
     <router-outlet></router-outlet>
+    <a class="" href="https://wa.me/5511948082374" target="_blank">
+      <img class="whatsapp" src="../assets/img/redes-sociais/whatsapp.png" alt="whatsapp"/>
+    </a>
   </div>
 </div>

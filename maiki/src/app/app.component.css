@@ -1,8 +1,23 @@
 .conteudo-principal {
-  position: relative;
+  /* position: relative; */
+  padding-top: 50px;
 }
 
 * {
   overflow: hidden;
   font-family: "Montserrat";
+}
+
+.mobile {
+  position: fixed;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.whatsapp {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom:10px;
+  right:10px;
 }
