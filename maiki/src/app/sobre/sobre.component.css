@@ -13,7 +13,6 @@ p {
   max-width: 680px;
   margin: 5px;
   color: #777777 !important;
-  font-family: "Poppins", sans-serif;
   font-size: 1.5em;
   line-height: 1.8em !important;
 }
@@ -31,20 +30,26 @@ img {
   visibility: hidden;
 }
 
-/* @media screen and (max-width: 470px) {
-  .foto {
-    width: 125px;
-    margin-right: 5px;
-  }
-  .informacoes  {
-    font-size: 11px;
-    margin: 5px;
-  }
-  .center {
-    font-size: 11px;
-  }
-  .redes-sociais .rede-circulo {
-    width: 30px;
-    height: 30px;
-  }
-} */
+.container-mobile {
+  display: flex;
+}
+.fundo-branco {
+  box-shadow: 0px 5px 23px 0px rgb(0 0 0 / 20%);
+  background: #f9f9ff;
+  text-align: -webkit-center;
+  font-size: 14px ;
+  padding: 15px 0;
+}
+.foto-mobile {
+  width: 60%;
+  height: 70%;
+}
+.descritivo {
+  padding: 20px 15px;
+  color: #777;
+  font-weight: 300;
+  line-height: 1.625em;
+  font-size: 18px;
+  text-align: justify;
+}
+

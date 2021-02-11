@@ -1,3 +1,4 @@
+import { BrowserDetectService } from './../core/services/browser-detect.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sobre.component.css']
 })
 export class SobreComponent implements OnInit {
+  isDesktop = false;
+  isMobile = false;
+
   rootImagens = '../../assets/img/redes-sociais/';
   arrayRedes = [
     { nome: 'facebook', link: 'https://www.facebook.com/maiki.rdgs' },
@@ -17,9 +21,10 @@ export class SobreComponent implements OnInit {
     { nome: 'email', link: 'mailto:ismenemaiki@gmail.com' },
     { nome: 'github', link: 'https://github.com/ismenemaiki' }
   ];
-  constructor() { }
+  constructor(private browserDetect: BrowserDetectService) { }
 
   ngOnInit() {
+    this.isDesktop = this.browserDetect.isDesktop();
+    this.isMobile = this.browserDetect.isMobile();
   }
-
 }

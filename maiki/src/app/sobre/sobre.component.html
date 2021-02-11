@@ -1,8 +1,44 @@
-<div class="container">
-  <div>
-    <section class="inline">
-      <div class="informacoes">
+
+<div *ngIf="isDesktop" >
+    <div class="container">
+      <div>
+      <section class="inline">
+        <div class="">
+          <p class="p100">
+            <span class="hide">___</span>Meu nome é Maiki, tenho 27 anos, sou programador de profissão,
+            analista de formação, engenheiro de coração e tatuador entusiasta (iniciante).
+            Sou extramamente apaixonado por desenvolver, entender soluções, saber como as coisas funcionam
+            (não só na programação e/ou teorias), montar coisas misturando tudo.
+            Sou muito curioso e gosto muito de aprender a fazer de tudo, sou 'mexanico' e gosto de colocar a mão na massa.
+          </p>
+        </div>
+        <div class="imagem">
+          <img class="foto" src="../../assets/img/sobre-cafe2.png" alt="Maiki">
+        </div>
+      </section>
+      <section class="inline reverse">
         <p class="p100">
+          <span class="hide">___</span>Faço de tudo um pouco, tirando politica, gastronomia, medicina e finanças, de resto me arrisco de tudo! (rs)
+          Tenho inumeros projetos na cabeça e estou colocando-os em prática um a um, aos poucos.
+          <br>
+          <span class="hide">___</span>Meu intuito com o site, a priori, é fazer um <a routerLink="/portfolios">portfolio</a> das minhas artes que desenvolvo durante o tempo vago (tatuagens e desenhos basicamente),
+          falar um pouco sobre mim e talvez diversificar com algumas coisas atipicas dos meus projetos também.
+        </p>
+        <div class="imagem">
+          <img class="foto" src="../../assets/img/sobre-tattoo2.png" alt="Maiki">
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div *ngIf="isMobile">
+  <div class="container-mobile">
+    <section>
+      <div class="fundo-branco">
+        <img class="foto-mobile" src="../../assets/img/sobre-cafe2.png" alt="Maiki">
+      </div>
+      <div>
+        <p class="descritivo">
           <span class="hide">___</span>Meu nome é Maiki, tenho 27 anos, sou programador de profissão,
           analista de formação, engenheiro de coração e tatuador entusiasta (iniciante).
           Sou extramamente apaixonado por desenvolver, entender soluções, saber como as coisas funcionam
@@ -10,20 +46,19 @@
           Sou muito curioso e gosto muito de aprender a fazer de tudo, sou 'mexanico' e gosto de colocar a mão na massa.
         </p>
       </div>
-      <div class="imagem">
-        <img class="foto" src="../../assets/img/sobre-cafe2.png" alt="Maiki">
+      <div>
+        <div class="fundo-branco">
+          <img class="foto-mobile" src="../../assets/img/sobre-tattoo2.png" alt="Maiki">
+        </div>
       </div>
-    </section>
-    <section class="inline reverse">
-      <p class="p100">
-        <span class="hide">___</span>Faço de tudo um pouco, tirando politica, gastronomia, medicina e finanças, de resto me arrisco de tudo! (rs)
-        Tenho inumeros projetos na cabeça e estou colocando-os em prática um a um, aos poucos.
-        <br>
-        <span class="hide">___</span>Meu intuito com o site, a priori, é fazer um <a routerLink="/portfolios">portfolio</a> das minhas artes que desenvolvo durante o tempo vago (tatuagens e desenhos basicamente),
-        falar um pouco sobre mim e talvez diversificar com algumas coisas atipicas dos meus projetos também.
-      </p>
-      <div class="imagem">
-        <img class="foto" src="../../assets/img/sobre-tattoo2.png" alt="Maiki">
+      <div>
+        <p class="descritivo">
+          <span class="hide">___</span>Faço de tudo um pouco, tirando politica, gastronomia, medicina e finanças, de resto me arrisco de tudo! (rs)
+          Tenho inumeros projetos na cabeça e estou colocando-os em prática um a um, aos poucos.
+          <br>
+          <span class="hide">___</span>Meu intuito com o site, a priori, é fazer um <a routerLink="/portfolios">portfolio</a> das minhas artes que desenvolvo durante o tempo vago (tatuagens e desenhos basicamente),
+          falar um pouco sobre mim e talvez diversificar com algumas coisas atipicas dos meus projetos também.
+        </p>
       </div>
     </section>
   </div>
