@@ -56,3 +56,30 @@ img:hover{
 .m50 {
   margin-top: 50px;
 }
+.container-mobile {
+  height: 100px;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.copyright {
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  border-top: solid 1px #fff;
+  width: 80%;
+}
+.redes-mobile {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  width: 80%;
+}
+.array-mobile {
+  justify-self: center;
+  justify-content: space-around;
+}

@@ -1,58 +1,52 @@
-<div class="w100 m50">
-  <div class="container">
-    <div class="rodape">
-      <section class="redes">
-        <p>Redes sociais</p>
-        <div class="container-redes">
-          <span class="icones-redes" *ngFor="let item of arrayRedes">
-            <a href="{{ item.link }}" target="_blank">
-              <img class="rede-circulo" [src]="rootImagens + item.nome + '.png'" alt="{{ item.nome }}"/>
+<div *ngIf="isDesktop" >
+  <div class="w100 m50">
+    <div class="container">
+      <div class="rodape">
+        <section class="redes">
+          <p>Redes sociais</p>
+          <div class="container-redes">
+            <span class="icones-redes" *ngFor="let item of arrayRedes">
+              <a href="{{ item.link }}" target="_blank">
+                <img class="rede-circulo" [src]="rootImagens + item.nome + '.png'" alt="{{ item.nome }}"/>
+              </a>
+            </span>
+          </div>
+        </section>
+        <section class="contatos">
+          <p>Git hub</p>
+          <div class="container-redes">
+            <a href="https://github.com/ismenemaiki" target="_blank">
+              <img class="rede-circulo sepia" src="../../assets/img/redes-sociais/github.png" alt="Git hub"/>
             </a>
-          </span>
         </div>
-      </section>
-      <section class="contatos">
-        <p>Git hub</p>
-        <div class="container-redes">
-          <a href="https://github.com/ismenemaiki" target="_blank">
-            <img class="rede-circulo sepia" src="../../assets/img/redes-sociais/github.png" alt="Git hub"/>
-          </a>
+        </section>
+        <section class="contatos">
+          <p>Contatos</p>
+          <div class="container-contatos">
+            <span class="icones-redes" *ngFor="let item of arrayContatos">
+              <a href="{{ item.link }}" target="_blank">
+                <img class="rede-circulo" [src]="rootImagens + item.nome + '.png'" alt="{{ item.nome }}"/>
+              </a>
+            </span>
+          </div>
+        </section>
       </div>
-      </section>
-      <section class="contatos">
-        <p>Contatos</p>
-        <div class="container-contatos">
-          <span class="icones-redes" *ngFor="let item of arrayContatos">
-            <a href="{{ item.link }}" target="_blank">
-              <img class="rede-circulo" [src]="rootImagens + item.nome + '.png'" alt="{{ item.nome }}"/>
-            </a>
-          </span>
-        </div>
-      </section>
     </div>
-  </div>
-  <div class="container">
-    <footer> © www.maiki.com.br - 2021</footer>
+    <div class="container">
+      <footer> © www.maiki.com.br - 2021</footer>
+    </div>
   </div>
 </div>
-<!-- <div class="fixar-rodape">
-  <footer>
-    <div class="redes-sociais">
-      <div>
-        REDES
-        <span *ngFor="let item of arrayRedes">
-          <a href="{{ item.link }}" target="_blank">
-            <img class="rede-circulo" [src]="rootImagens + item.nome + '.png'" alt="{{ item.nome }}"/>
-          </a>
-        </span>
+
+<div *ngIf="isMobile" >
+  <div class="container-mobile">
+    <section class="redes-mobile">
+      <div class="array-mobile" *ngFor="let item of arrayMobile">
+        <a href="{{ item.link }}" target="_blank">
+          <img class="rede-circulo" [src]="rootImagens + item.nome + '.png'" alt="{{ item.nome }}"/>
+        </a>
       </div>
-    </div>
-    <div class="contatos">
-      <div>CONTATOS
-        <p>as</p>
-      </div>
-    </div>
-    <hr />
-    www.maiki.com.br - 2020
-  </footer>
-</div> -->
+    </section>
+    <div class="copyright"> © www.maiki.com.br - 2021</div>
+  </div>
+</div>
