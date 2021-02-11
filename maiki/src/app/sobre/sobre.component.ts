@@ -26,5 +26,6 @@ export class SobreComponent implements OnInit {
   ngOnInit() {
     this.isDesktop = this.browserDetect.isDesktop();
     this.isMobile = this.browserDetect.isMobile();
+    window.onscroll = () => { this.browserDetect.scrollFunction(1030); };
   }
 }

@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.isMobile = this.browserDetect.isMobile();
     this.isDesktop = this.browserDetect.isDesktop();
+    window.onscroll = () => { this.browserDetect.scrollFunction(60); };
   }
 
   ngAfterViewInit() {

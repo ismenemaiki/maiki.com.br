@@ -7,7 +7,7 @@ export class BrowserDetectService {
   private browser: BrowserInfo;
 
   constructor() {
-    this.browser = <BrowserInfo>detect();
+    this.browser = <BrowserInfo> detect();
   }
 
   isMobile(): boolean {
@@ -16,4 +16,11 @@ export class BrowserDetectService {
   isDesktop(): boolean {
     return !this.isMobile();
   }
+  scrollFunction(height: number): void {
+    if (document.documentElement.scrollTop < height) {
+        document.getElementById('whatsapp').style.display = 'block';
+    } else {
+        document.getElementById('whatsapp').style.display = 'none';
+    }
+}
 }
