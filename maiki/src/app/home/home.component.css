@@ -11,8 +11,7 @@ img {
 .texto {
   display: flex;
   width: 360px;
-  color: #777777 !important;
-  font-family: "Poppins", sans-serif;
+  color: #777777;
   font-size: 1.25em;
   font-weight: 300;
   line-height: 1.625em;
@@ -23,9 +22,8 @@ img {
   margin: 20px 0;
   font-size: 60px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   color: #222222;
-  line-height: 1.2em !important;
+  line-height: 1.2em;
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 600;
@@ -55,7 +53,7 @@ img {
   max-width: 220px;
   text-align: left;
   margin: 20px auto;
-  font-family:'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace !important;
   color: rgb(11, 168, 58);
 }
 .console-pc:after{
@@ -113,7 +111,7 @@ h6 {
   letter-spacing: 2px;
   font-size: 14px;
   color: #222;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 h1 {
   margin: 20px 0;
@@ -130,6 +128,10 @@ h1 {
   color: #777;
   font-weight: 300;
   line-height: 1.625em;
+}
+.resumo {
+  font-size: 18px;
+
 }
 .m30 {
   margin-top:30px !important;
