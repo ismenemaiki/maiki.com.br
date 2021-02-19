@@ -25,18 +25,13 @@
   align-items: center;
 }
 
-/* ::ng-deep #inicio {
-  padding-left: 0px;
-} */
-
 .menu-nav .icon {
   display: none;
 }
 
-.sidepanel  {
+.sidepanel  { /* barra lateral do menu */
   width: 0;
   position: fixed;
-  z-index: 1;
   top: 0;
   opacity: 0.9;
   background: #546ef9;
@@ -45,7 +40,7 @@
   padding-top: 60px;
 }
 
-.sidepanel a {
+.sidepanel a {   /* itens dentro do menu */
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
@@ -56,10 +51,6 @@
   transition: 0.2s;
 }
 
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
 .sidepanel .closebtn {
   color: #f2f2f2;
   position: absolute;
@@ -68,16 +59,11 @@
   font-size: 36px;
 }
 
-.openbtn {
+.menu-bar {
   font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
+  color: #f2f2f2;
   padding: 10px 15px;
   border: none;
-}
-
-.openbtn:hover {
-  background-color:#444;
+  background: -webkit-linear-gradient(-45deg, #00eaf3 0%, #546ef9 50%, #8c1cf9 100%);
 }
 
