@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "skipLibCheck": true, // isso por conta das verificações de versões do cli e outros
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

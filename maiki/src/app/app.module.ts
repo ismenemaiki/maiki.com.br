@@ -1,3 +1,4 @@
+import { SwiperModule } from 'swiper/angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +11,7 @@ import { routing } from './app.routing';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { BlogComponent } from './blog/blog.component';
 import { RodapeComponent } from './rodape/rodape.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { RodapeComponent } from './rodape/rodape.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
