@@ -1,59 +1,63 @@
 
-<div class="conteudo">
-  <div class="tab">
-    <button id="btn-tattoo" class="linkAba" (click)="trocaAba($event, 'tatuagens')">Tatuagens</button>
-    <button id="btn-desenho" class="linkAba" (click)="trocaAba($event, 'desenhos')">Desenhos</button>
+<div *ngIf="isDesktop">
+  <div class="swiper-container desktop" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/gengar.jpg)" data-hash="gengar"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/bem-me-quero.jpg)" data-hash="bem-me-quero"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/decidi.jpg)" data-hash="decidi"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/livrai-me-do-mal.jpg)" data-hash="livrai-me-do-mal"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/chora-agora.jpg)" data-hash="chora-agora"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/filhos-amor-eterno.jpg)" data-hash="filhos-amor-eterno"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/irmaos-metralha.jpg)" data-hash="irmaos-metralha"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/jamais-perca-seu-equilibrio.jpg)" data-hash="jamais-perca-seu-equilibrio"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/la-casa-de-papel.jpg)" data-hash="la-casa-de-papel"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/palhaço.jpg)" data-hash="palhaço"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/passarinho-rosa.jpg)" data-hash="passarinho-rosa"></div>
+      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/triangulo-bolinha.jpg)" data-hash="triangulo-bolinha"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <div id="tatuagens" class="conteudoAba">
-    <div class="container-visualizador w3-content w3-display-container" >
-      <div>
-        <span *ngFor="let item of arrayTattoos ">
-          <img (click)="abrirModal('abrir-modal', item.nome)" class="slides" [src]="rootTattos + item.nome + '.jpg'">
-        </span>
-      </div>
-      <div class="btn">
-        <button class="w3-button w3-black w3-display-left" (click)="trocaImagem(-1)">❮</button>
-        <button class="w3-button w3-black w3-display-right" (click)="trocaImagem(1)">❯</button>
-      </div>
-    </div>
-    <div class="inline galeria" *ngIf="arrayTattoos" >
-      <span *ngFor="let item of arrayTattoos">
-        <div class="selecionado" (click)="imagemAtual(item.id)">
-          <img id="item.id" class="miniatura" [src]="rootTattos + item.nome + '.jpg'">
-        </div>
-      </span>
-    </div>
-  </div>
-  <div id="desenhos" class="conteudoAba">
-    <!-- <div class="container-visualizador w3-content w3-display-container" >
-      <div>
-        <span *ngFor="let item of arrayDesenhos ">
-          <img (click)="abrirModal('abrir-modal', item.nome)" class="slides" [src]="rootDesenhos + item.nome + '.jpg'">
-        </span>
-      </div>
-      <div class="btn">
-        <button class="w3-button w3-black w3-display-left" (click)="trocaImagem(-1)">❮</button>
-        <button class="w3-button w3-black w3-display-right" (click)="trocaImagem(1)">❯</button>
-      </div>
-    </div>
-    <div class="inline galeria" *ngIf="arrayDesenhos" >
-      <span *ngFor="let item of arrayDesenhos">
-        <div class="selecionado" (click)="imagemAtual(item.id)">
-          <img id="item.id" class="miniatura" [src]="rootDesenhos + item.nome + '.jpg'">
-        </div>
-      </span>
-    </div>
-  </div> -->
-</div>
 
-<div class="w3-container">
-  <div id="abrir-modal" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container" >
-        <span (click)="fecharModal('abrir-modal')" class="w3-button w3-display-topright black-write">&times;</span>
-        <img *ngIf="imagemSelecionada" class="" [src]="rootTattos + imagemSelecionada + '.jpg'" >
-      </div>
-    </div>
-  </div>
 </div>
+<div *ngIf="isMobile" >
+  <section class="tatuagens" *ngIf="tattoos" >
+  <div class="swiper-container" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/gengar.jpg)" data-hash="gengar"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/bem-me-quero.jpg)" data-hash="bem-me-quero"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/decidi.jpg)" data-hash="decidi"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/livrai-me-do-mal.jpg)" data-hash="livrai-me-do-mal"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/chora-agora.jpg)" data-hash="chora-agora"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/filhos-amor-eterno.jpg)" data-hash="filhos-amor-eterno"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/irmaos-metralha.jpg)" data-hash="irmaos-metralha"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/jamais-perca-seu-equilibrio.jpg)" data-hash="jamais-perca-seu-equilibrio"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/la-casa-de-papel.jpg)" data-hash="la-casa-de-papel"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/palhaço.jpg)" data-hash="palhaço"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/passarinho-rosa.jpg)" data-hash="passarinho-rosa"></div>
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/triangulo-bolinha.jpg)" data-hash="triangulo-bolinha"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+<section class="desenhos" *ngIf="desenhos" >
+  <div class="swiper-container" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
+     </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
 
+<section class="botoes">
+  <a class="primary-btn text-uppercase" (click)="changeAba('tattoos')">tatuagens</a>
+  <a class="primary-btn text-uppercase" (click)="changeAba('desenhos')">desenhos</a>
+</section>
+</div>
