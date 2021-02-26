@@ -150,16 +150,15 @@ p {
   content: "";
   position: absolute;
   height: 100%;
-  width: 2px;
   left: 10px;
-  background-color: #afacac;
+  border-right: 1px solid #afacac;
 }
 
 .traco {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 75%;
   left: 28px;
-  background-color: #afacac;
+  border-top: 1px solid #afacac;
 }
