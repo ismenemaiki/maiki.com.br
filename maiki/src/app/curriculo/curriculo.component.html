@@ -1,68 +1,145 @@
-<section>
-  <h1>Formação Acadêmica</h1>
-  <div class="conteudo">
-    <div class="primeira">
-      <div class="caixa">
-        <h4>Análise e Desenvolvimento de Sistemas</h4>
-        <p>conclusão: jul/ 2019</p>
-      </div>
-    </div>
-    <div class="linha-vertical">
-      <div class="bolinha"></div>
-      <div class="bolinha"></div>
-      <div class="bolinha"></div>
-    </div>
-    <div>
-      <div class="caixa">
-        <h4>Engenharia da Computação</h4>
-        <p>conclusão: dez/ 2025</p>
-      </div>
-      <div class="caixa m200">
-        <h4>Técnico em logística</h4>
-        <p>conclusão: dez/ 2015</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <h1>Experiências profissionais</h1>
-  <div class="conteudo">
-    <div>
-      <div class="caixa">
-        <h4>Analista de Sistemas</h4>
-        <div>
-          <p>BRQ Digital Solutions</p>
-          <p>Mar/ 2020 - atual</p>
+<div *ngIf="isDesktop">
+  <section>
+    <h1 class="titulo-desk">Formação Acadêmica</h1>
+    <div class="conteudo">
+      <div class="primeira">
+        <div class="caixa">
+          <h4>Análise e Desenvolvimento de Sistemas</h4>
+          <p>conclusão: jul/ 2019</p>
         </div>
       </div>
-      <div class="caixa m200">
-        <h4>Analista Programador </h4>
-        <div>
-          <p>Resource It Solutions</p>
-          <p>Mai/ 2018 - Jan/ 2020</p>
+      <div class="linha-vertical">
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+      </div>
+      <div>
+        <div class="caixa">
+          <h4>Engenharia da Computação</h4>
+          <p>conclusão: dez/ 2025</p>
+        </div>
+        <div class="caixa m200">
+          <h4>Técnico em logística</h4>
+          <p>conclusão: dez/ 2015</p>
         </div>
       </div>
     </div>
-    <div class="linha-vertical">
-      <div class="bolinha"></div>
-      <div class="bolinha"></div>
-      <div class="bolinha"></div>
-    </div>
+  </section>
+  <section>
+    <h1 class="titulo-desk">Experiências profissionais</h1>
+    <div class="conteudo">
+      <div>
+        <div class="caixa">
+          <h4>Analista de Sistemas</h4>
+          <div>
+            <p>BRQ Digital Solutions</p>
+            <p>Mar/ 2020 - atual</p>
+          </div>
+        </div>
+        <div class="caixa m200">
+          <h4>Analista Programador </h4>
+          <div>
+            <p>Resource It Solutions</p>
+            <p>Mai/ 2018 - Jan/ 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="linha-vertical">
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+      </div>
 
-    <div class="primeira">
-      <div class="caixa">
-        <h4>Desenvolvedor de Software</h4>
-        <div>
-          <p>Indra Company</p>
-          <p>Jan - Mar /2020</p>
+      <div class="primeira">
+        <div class="caixa">
+          <h4>Desenvolvedor de Software</h4>
+          <div>
+            <p>Indra Company</p>
+            <p>Jan - Mar /2020</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+  <div class="download">
+    <p class="espaco">Baixar meu CV completo </p>
+    <a download="CV - Maiki Rodrigues Ismene.pdf" class="primary-btn text-uppercase"
+      href="../../assets/file/CV - Maiki Rodrigues Ismene.pdf">
+      Download
+    </a>
   </div>
-</section>
-<div class="download">
-  <p class="espaco">Baixar meu CV completo </p>
-  <a download="CV - Maiki Rodrigues Ismene.pdf" class="primary-btn text-uppercase" href="../../assets/file/CV - Maiki Rodrigues Ismene.pdf">
-    Download
-  </a>
+</div>
+
+<div class="container-mobile" *ngIf="isMobile">
+  <section>
+    <h1 class="titulo-mobile">Formação Acadêmica</h1><span class="traco"></span>
+    <div class="timeline">
+      <ul>
+        <li></li>
+        <li>
+          <div class="point"></div>
+          <div class="caixa-mobile">
+            <h3>Engenharia da Computação</h3>
+            <p>conclusão: dez/ 2025</p>
+          </div>
+        </li>
+        <li>
+          <div class="point"></div>
+          <div class="caixa-mobile">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>conclusão: jul/ 2019</p>
+          </div>
+        </li>
+        <li>
+          <div class="point"></div>
+          <div class="caixa-mobile">
+            <h3>Técnico em logística</h3>
+            <p>conclusão: dez/ 2015</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h1 class="titulo-mobile">Experiências profissionais</h1><span class="traco"></span>
+    <div class="timeline">
+      <ul>
+        <li></li>
+        <li>
+          <div class="point"></div>
+          <div class="caixa-mobile">
+            <h3>Analista de Sistemas</h3>
+            <p>BRQ Digital Solutions</p>
+            <p>Mar/ 2020 - atual</p>
+          </div>
+        </li>
+        <li>
+          <div class="point"></div>
+          <div class="caixa-mobile">
+            <h3>Desenvolvedor de Software</h3>
+            <p>Indra Company</p>
+            <p>Jan - Mar /2020</p>
+          </div>
+        </li>
+        <li>
+          <div class="point"></div>
+          <div class="caixa-mobile">
+            <h3>Analista Programador</h3>
+            <p>Resource It Solutions</p>
+            <p>Mai/ 2018 - Jan/ 2020</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="download">
+    <p class="espaco">Baixar meu CV completo </p>
+    <span>
+      <a download="CV - Maiki Rodrigues Ismene.pdf" class="primary-btn text-uppercase branco"
+      href="../../assets/files/CV - Maiki Rodrigues Ismene.pdf">
+      Download
+    </a>
+    </span>
+  </div>
+
 </div>
