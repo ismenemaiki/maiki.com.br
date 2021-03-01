@@ -36,6 +36,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  top: 0 !important
 }
 
 .primeira {
@@ -43,6 +44,7 @@
 }
 
 .titulo-desk {
+  text-transform: uppercase;
   text-align: center;
   margin-top: 90px;
 }
@@ -56,7 +58,14 @@ p {
   font-size: 1.25em;
   color: #000;
 }
-
+.traco-desk {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 40%;
+  left: 30%;
+  border-top: 1px solid #afacac;
+}
 .bolinha:before {
   content: '';
   background: #8490ff;
