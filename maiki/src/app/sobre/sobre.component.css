@@ -53,3 +53,13 @@ img {
   text-align: justify;
 }
 
+.titulo {
+  text-align: center;
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+* {
+  font-family: "Montserrat";
+  color: #777777
+}
