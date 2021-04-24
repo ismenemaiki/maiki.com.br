@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { BlogComponent } from './blog/blog.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { RodapeComponent } from './rodape/rodape.component';
   imports: [
     BrowserModule,
     routing,
-    SwiperModule
+    SwiperModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,35 +1,62 @@
 
 <div *ngIf="isDesktop">
-  <div class="swiper-container desktop" id="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/kakashi.jpg)" data-hash="kakashi"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
-      <!-- <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/gengar.jpg)" data-hash="gengar"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/bem-me-quero.jpg)" data-hash="bem-me-quero"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/decidi.jpg)" data-hash="decidi"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/livrai-me-do-mal.jpg)" data-hash="livrai-me-do-mal"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/chora-agora.jpg)" data-hash="chora-agora"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/filhos-amor-eterno.jpg)" data-hash="filhos-amor-eterno"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/irmaos-metralha.jpg)" data-hash="irmaos-metralha"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/jamais-perca-seu-equilibrio.jpg)" data-hash="jamais-perca-seu-equilibrio"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/la-casa-de-papel.jpg)" data-hash="la-casa-de-papel"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/palhaço.jpg)" data-hash="palhaço"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/passarinho-rosa.jpg)" data-hash="passarinho-rosa"></div>
-      <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/triangulo-bolinha.jpg)" data-hash="triangulo-bolinha"></div> -->
+  <div class="centralizado">
+    <div class="visualizar">
+      Visualizar portfólio:
+      <div class="select">
+        <select class="form-control" [ngModel]="aba" (ngModelChange)="changeAba($event)">
+          <option value="tatuagens" selected>Tatuagens</option>
+          <option value="desenhos">Desenhos</option>
+          <option value="programacao">Programação</option>
+        </select>
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
-
+  <section *ngIf="tattoo">
+    <div class="swiper-container desktop" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/kakashi.jpg)" data-hash="kakashi"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/gengar.jpg)" data-hash="gengar"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/bem-me-quero.jpg)" data-hash="bem-me-quero"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/decidi.jpg)" data-hash="decidi"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/livrai-me-do-mal.jpg)" data-hash="livrai-me-do-mal"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/chora-agora.jpg)" data-hash="chora-agora"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/filhos-amor-eterno.jpg)" data-hash="filhos-amor-eterno"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/irmaos-metralha.jpg)" data-hash="irmaos-metralha"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/jamais-perca-seu-equilibrio.jpg)" data-hash="jamais-perca-seu-equilibrio"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/la-casa-de-papel.jpg)" data-hash="la-casa-de-papel"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/palhaço.jpg)" data-hash="palhaço"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/passarinho-rosa.jpg)" data-hash="passarinho-rosa"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/tattoos/triangulo-bolinha.jpg)" data-hash="triangulo-bolinha"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section *ngIf="desenho" >
+    <p>desenhos</p>
+  </section>
+  <section *ngIf="programacao" >
+    <p>programcao</p>
+  </section>
 </div>
+
 <div *ngIf="isMobile" >
-  <div class="margin">
-    <div class="alert alert-info" role="alert">
-      Aviso: as imagens estão sendo alteradas para um novo layout para otimizar o carregamento (por isso algumas estao diferentes)
+  <div class="centralizado" >
+    <div class="visualizar-mobile">
+      Visualizar portfólio:
+      <div class="">
+        <select class="form-control" [ngModel]="aba" (ngModelChange)="changeAba($event)">
+          <option value="tatuagens" selected>Tatuagens</option>
+          <option value="desenhos">Desenhos</option>
+          <option value="programacao">Programação</option>
+        </select>
+      </div>
     </div>
   </div>
-  <section class="tatuagens" *ngIf="tattoos" >
+  <section class="tatuagens" *ngIf="tattoo" >
   <div class="swiper-container" id="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/kakashi.jpg)" data-hash="kakashi"></div>
@@ -55,7 +82,7 @@
     <div class="swiper-button-next"></div>
   </div>
 </section>
-<section class="desenhos" *ngIf="desenhos" >
+<section class="desenhos" *ngIf="desenho" >
   <div class="swiper-container" id="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
@@ -66,8 +93,4 @@
   </div>
 </section>
 
-<section class="botoes">
-  <a class="primary-btn text-uppercase" (click)="changeAba('tattoos')">tatuagens</a>
-  <a class="primary-btn text-uppercase" (click)="changeAba('desenhos')">desenhos</a>
-</section>
 </div>

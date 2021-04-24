@@ -12,25 +12,29 @@
 section {
   display: flex;
 }
-a {
-  color: #fff !important
+.centralizado {
+  text-align: -webkit-center;
 }
-.botoes {
+.visualizar {
   justify-content: space-between;
   padding: 0 10px;
-
+  display: flex;
+  width: 500px;
+  align-items: center;
 }
-
+.visualizar-mobile {
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  align-items: center;
+}
+.select {
+  width: 250px;
+}
 .desktop {
   width: 610px;
 }
-
 .item {
   width: 600px;
   height: 900px;
-}
-
-.alert {
-  margin: 10px !important;
-  top: 10px;
 }
