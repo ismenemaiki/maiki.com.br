@@ -36,13 +36,25 @@
     </div>
   </section>
   <section *ngIf="desenho" >
-    <p>desenhos</p>
+    <div class="swiper-container desktop" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/homem-de-ferro.jpg)" data-hash="homem-de-ferro"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/doutor-estranho.jpg)" data-hash="doutor-estranho"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/nebulosa.jpg)" data-hash="nebulosa"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/homem-formiga.jpg)" data-hash="homem-formiga"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/pantera-negra.jpg)" data-hash="pantera-negra"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/quill.jpg)" data-hash="quill"></div>
+        <div class="swiper-slide item" style="background-image:url(../../assets/img/desenhos/dudinha.jpg)" data-hash="dudinha"></div>
+    </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
   <section *ngIf="programacao" >
-    <p>programcao</p>
+    <p>página em desenvolvimento</p>
   </section>
 </div>
-
 <div *ngIf="isMobile" >
   <div class="centralizado" >
     <div class="visualizar-mobile">
@@ -57,40 +69,48 @@
     </div>
   </div>
   <section class="tatuagens" *ngIf="tattoo" >
-  <div class="swiper-container" id="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/kakashi.jpg)" data-hash="kakashi"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/paisagem.jpg)" data-hash="paisagem"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/iam-yours.jpg)" data-hash="iam-yours"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/ancora.jpg)" data-hash="ancora"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/gengar.jpg)" data-hash="gengar"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/la-casa-de-papel.jpg)" data-hash="la-casa-de-papel"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/bem-me-quero.jpg)" data-hash="bem-me-quero"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/decidi.jpg)" data-hash="decidi"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/livrai-me-do-mal.jpg)" data-hash="livrai-me-do-mal"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/chora-agora.jpg)" data-hash="chora-agora"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/filhos-amor-eterno.jpg)" data-hash="filhos-amor-eterno"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/irmaos-metralha.jpg)" data-hash="irmaos-metralha"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/jamais-perca-seu-equilibrio.jpg)" data-hash="jamais-perca-seu-equilibrio"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/palhaço.jpg)" data-hash="palhaço"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/passarinho-rosa.jpg)" data-hash="passarinho-rosa"></div>
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/triangulo-bolinha.jpg)" data-hash="triangulo-bolinha"></div>
+    <div class="swiper-container" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/kakashi.jpg)" data-hash="kakashi"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/paisagem.jpg)" data-hash="paisagem"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/iam-yours.jpg)" data-hash="iam-yours"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/ancora.jpg)" data-hash="ancora"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/gengar.jpg)" data-hash="gengar"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/la-casa-de-papel.jpg)" data-hash="la-casa-de-papel"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/bem-me-quero.jpg)" data-hash="bem-me-quero"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/decidi.jpg)" data-hash="decidi"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/livrai-me-do-mal.jpg)" data-hash="livrai-me-do-mal"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/chora-agora.jpg)" data-hash="chora-agora"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/filhos-amor-eterno.jpg)" data-hash="filhos-amor-eterno"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/irmaos-metralha.jpg)" data-hash="irmaos-metralha"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/jamais-perca-seu-equilibrio.jpg)" data-hash="jamais-perca-seu-equilibrio"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/palhaço.jpg)" data-hash="palhaço"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/passarinho-rosa.jpg)" data-hash="passarinho-rosa"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/triangulo-bolinha.jpg)" data-hash="triangulo-bolinha"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
-<section class="desenhos" *ngIf="desenho" >
-  <div class="swiper-container" id="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(../../assets/img/tattoos/hakuna-matata.jpg)" data-hash="hakuna-matata"></div>
-     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
-
+  </section>
+  <section class="desenhos" *ngIf="desenho" >
+    <div class="swiper-container" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/homem-de-ferro.jpg)" data-hash="homem-de-ferro"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/doutor-estranho.jpg)" data-hash="doutor-estranho"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/nebulosa.jpg)" data-hash="nebulosa"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/homem-formiga.jpg)" data-hash="homem-formiga"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/pantera-negra.jpg)" data-hash="pantera-negra"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/quill.jpg)" data-hash="quill"></div>
+        <div class="swiper-slide" style="background-image:url(../../assets/img/desenhos/dudinha.jpg)" data-hash="dudinha"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section *ngIf="programacao" >
+    <p>página em desenvolvimento</p>
+  </section>
 </div>
